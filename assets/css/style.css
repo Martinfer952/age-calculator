@@ -113,7 +113,7 @@ hr {
 }
 
 .result {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .result h1 {
@@ -125,4 +125,38 @@ hr {
 
 .result span {
   color: var(--Purple);
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-inline: 1rem;
+  }
+  .container_card {
+    width: max-content;
+    padding-inline: 2rem;
+  }
+  .input-container {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .input-item input {
+    font-size: 22px;
+    min-width: 90px;
+    width: 100%;
+  }
+  .submit-btn {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+  }
+  .submit-btn img {
+    width: 30px;
+  }
+  .result {
+    margin-top: 5rem;
+  }
+  .result h1 {
+    font-size: 12vw;
+  }
 }
