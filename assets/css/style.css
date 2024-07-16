@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Primary */
+  --Purple: hsl(259, 100%, 65%);
+  --LightRed: hsl(0, 100%, 67%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --OffWhite: hsl(0, 0%, 94%);
+  --LightGrey: hsl(0, 0%, 86%);
+  --SmokeyGrey: hsl(0, 1%, 44%);
+  --OffBlack: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+main {
+  background: var(--OffWhite);
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_card {
+  background: var(--White);
+  width: 600px;
+  border-radius: 1rem 1rem 10rem 1rem;
+  padding: 2.5rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-item label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--SmokeyGrey);
+}
+
+.input-item input {
+  width: 120px;
+  /* height: 50px; */
+  padding-inline: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--OffBlack);
+  border-radius: 5px;
+  border: 1px solid var(--LightGrey);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+small {
+  color: var(--LightRed);
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 10px;
+}
+
+.submit-block {
+  position: relative;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  color: var(--LightGrey);
+  background-color: var(--LightGrey);
+}
+
+.submit-btn {
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  background: var(--Purple);
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-btn:hover {
+  background: var(--OffBlack);
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 2rem;
+}
+
+.result h1 {
+  font-size: 75px;
+  font-style: oblique;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.result span {
+  color: var(--Purple);
+}
