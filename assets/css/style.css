@@ -32,9 +32,9 @@ main {
 
 .container_card {
   background: var(--White);
-  width: 600px;
+  width: 800px;
   border-radius: 1rem 1rem 10rem 1rem;
-  padding: 2.5rem;
+  padding: 3.5rem;
 }
 
 .input-container {
@@ -59,11 +59,11 @@ main {
 }
 
 .input-item input {
-  width: 120px;
-  /* height: 50px; */
-  padding-inline: 10px;
+  width: 170px;
+  padding-inline: 20px;
+  padding-block: 10px;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--OffBlack);
   border-radius: 5px;
   border: 1px solid var(--LightGrey);
@@ -101,7 +101,7 @@ hr {
   transform: translateY(-50%);
   background: var(--Purple);
   border: none;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -117,7 +117,7 @@ hr {
 }
 
 .result h1 {
-  font-size: 75px;
+  font-size: 105px;
   font-style: oblique;
   line-height: 1;
   font-weight: 800;
